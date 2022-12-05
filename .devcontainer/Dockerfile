@@ -1,4 +1,5 @@
 FROM centos:7
+MAINTAINER spacemeowx2 <spacemeowx2@gmail.com>
 
 RUN yum update -y \
     && yum install -y @base @core epel-release scl-utils \
