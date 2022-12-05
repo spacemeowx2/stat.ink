@@ -1,0 +1,13 @@
+{
+    "name": "PHP 8 & PostgreSQL",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "onCreateCommand": "make init",
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        }
+    },
+    "remoteUser": "statink"
+}
