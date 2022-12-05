@@ -2,12 +2,14 @@
     "name": "PHP 8 & PostgreSQL",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/workspace",
-    "onCreateCommand": "make init",
+    "workspaceFolder": "/home/statink/stat.ink",
     "customizations": {
         "vscode": {
             "extensions": []
         }
     },
+    "forwardPorts": [
+        80
+    ],
     "remoteUser": "statink"
 }

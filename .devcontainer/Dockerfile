@@ -25,6 +25,7 @@ RUN useradd statink \
     && echo 'statink ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
     && ln -s /usr/bin/php80 /usr/bin/php
 
-USER statink
+RUN cd /etc/opt/remi/php80/php-fpm.d \
+    && perl -i -pe 's/^user = apache/user = statink/' www.conf
 
-CMD ["sleep", "infinity"]
+ADD docker/h2o/h2o.conf /etc/h2o/h2o.conf
